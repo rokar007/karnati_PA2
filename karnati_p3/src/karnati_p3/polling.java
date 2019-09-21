@@ -15,9 +15,10 @@ public class polling {
 		int smallest=0;
 
 		
+		Scanner in = new Scanner(System.in);
+		
 		for(int i=1;i<=10;i++){  
 			
-			Scanner in = new Scanner(System.in);
 			System.out.println("please rate the campaign from 1 to 10");
 			k = in.nextInt();
 			responses[1][k] += 1;
@@ -34,6 +35,11 @@ public class polling {
 			k = in.nextInt();
 			responses[1][k] += 1;
 			
+			System.out.println("if you would like to exit please enter 1 else enter 0");
+			j = in.nextInt();
+			if (j == 1){
+				break;
+			}
 		
 			}
 		
