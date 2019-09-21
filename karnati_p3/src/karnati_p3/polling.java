@@ -9,6 +9,10 @@ public class polling {
 		int[][] responses = new int[5][11];
 		int k;
 		int j;
+		int greatest_avg = 0;
+		int greatest=0;
+		int smallest_avg = 10;
+		int smallest=0;
 
 		
 		for(int i=1;i<=10;i++){  
@@ -30,12 +34,9 @@ public class polling {
 			k = in.nextInt();
 			responses[1][k] += 1;
 			
-			System.out.println("if everyone has taken the survey please enter 1");
-			j = in.nextInt();
-			if (j==0) {
-				break;
+		
 			}
-		}
+		
 		
 		
 		
@@ -54,7 +55,70 @@ public class polling {
 		System.out.println("character design "+ responses[4][1] + " " + responses[4][2] + " "+ responses[4][3] + " "+ responses[4][4] + " "+ responses[4][5] + " "+ responses[4][6] + " "+ responses[4][7] + " "+ responses[4][8] + " "+ responses[4][9] + " "+ responses[4][10] + " "+ responses[4][11] );
 		System.out.println("    overall "+ responses[5][1] + " " + responses[5][2] + " "+ responses[5][3] + " "+ responses[5][4] + " "+ responses[5][5] + " "+ responses[5][6] + " "+ responses[5][7] + " "+ responses[5][8] + " "+ responses[5][9] + " "+ responses[5][10] + " "+ responses[5][11] );
 		
+		
+		
+		for(int z=1;z<=5;z++){  
+			
+			if ( responses[z][11] > greatest_avg) {
+				
+				greatest = z;
+				greatest_avg = responses[z][11];
+				
+			}
+		
+		}
+		for(int y=1;y<=5;y++){  
+			
+			if ( responses[y][11] < smallest_avg) {
+				
+				smallest = y;
+				smallest_avg = responses[y][11];
+				
+			}
+		
+		}
+		
+		
+		switch(greatest) {
+		
+			case 1: 
+				System.out.println("the campaign is the highest rated");
+				break;
+			case 2: 
+				System.out.println("the multiplayer is the highest rated");
+				break;
+			case 3: 
+				System.out.println("the custom games are the highest rated");
+				break;
+			case 4: 
+				System.out.println("the character design is the highest rated");
+				break;
+			case 5: 
+				System.out.println("the overall is the highest rated");
+				break;
+
+		}
+		switch(smallest) {
+		
+		case 1: 
+			System.out.println("the campaign is the lowest rated");
+			break;
+		case 2: 
+			System.out.println("the multiplayer is the lowest rated");
+			break;
+		case 3: 
+			System.out.println("the custom games are the lowest rated");
+			break;
+		case 4: 
+			System.out.println("the character design is the lowest rated");
+			break;
+		case 5: 
+			System.out.println("the overall is the lowest rated");
+			break;
+
 	}
-		
-		
-}
+	
+	}
+	
+	}
+	
