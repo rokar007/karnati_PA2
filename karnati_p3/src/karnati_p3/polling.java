@@ -54,12 +54,12 @@ public class polling {
 			responses[l][11] /= 10;
 		}
 		
-		System.out.println("                 1 2 3 4 5 6 7 8 9 10 avg");
-		System.out.println("   campaign " + responses[1][1] + " " + responses[1][2] + " "+ responses[1][3] + " "+ responses[1][4] + " "+ responses[1][5] + " "+ responses[1][6] + " "+ responses[1][7] + " "+ responses[1][8] + " "+ responses[1][9] + " "+ responses[1][10] + " "+ responses[1][11] );
-		System.out.println("  multiplayer "+ responses[2][1] + " " + responses[2][2] + " "+ responses[2][3] + " "+ responses[2][4] + " "+ responses[2][5] + " "+ responses[2][6] + " "+ responses[2][7] + " "+ responses[2][8] + " "+ responses[2][9] + " "+ responses[2][10] + " "+ responses[2][11] );
-		System.out.println("  custom games "+ responses[3][1] + " " + responses[3][2] + " "+ responses[3][3] + " "+ responses[3][4] + " "+ responses[3][5] + " "+ responses[3][6] + " "+ responses[3][7] + " "+ responses[3][8] + " "+ responses[3][9] + " "+ responses[3][10] + " "+ responses[3][11] );
-		System.out.println("character design "+ responses[4][1] + " " + responses[4][2] + " "+ responses[4][3] + " "+ responses[4][4] + " "+ responses[4][5] + " "+ responses[4][6] + " "+ responses[4][7] + " "+ responses[4][8] + " "+ responses[4][9] + " "+ responses[4][10] + " "+ responses[4][11] );
-		System.out.println("    overall "+ responses[5][1] + " " + responses[5][2] + " "+ responses[5][3] + " "+ responses[5][4] + " "+ responses[5][5] + " "+ responses[5][6] + " "+ responses[5][7] + " "+ responses[5][8] + " "+ responses[5][9] + " "+ responses[5][10] + " "+ responses[5][11] );
+		System.out.println("                 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | avg");
+		System.out.println("   campaign     |" + responses[1][1] + "| " + responses[1][2] + "| "+ responses[1][3] + "| "+ responses[1][4] + "| "+ responses[1][5] + "| "+ responses[1][6] + "| "+ responses[1][7] + "| "+ responses[1][8] + "| "+ responses[1][9] + "| "+ responses[1][10] + "| "+ responses[1][11] );
+		System.out.println("  multiplayer   |"+ responses[2][1] + "| " + responses[2][2] + "| "+ responses[2][3] + "| "+ responses[2][4] + "| "+ responses[2][5] + "| "+ responses[2][6] + "| "+ responses[2][7] + "| "+ responses[2][8] + "| "+ responses[2][9] + "| "+ responses[2][10] + "| "+ responses[2][11] );
+		System.out.println("  custom games  |"+ responses[3][1] + "| " + responses[3][2] + "| "+ responses[3][3] + "| "+ responses[3][4] + "| "+ responses[3][5] + "| "+ responses[3][6] + "| "+ responses[3][7] + "| "+ responses[3][8] + "| "+ responses[3][9] + "| "+ responses[3][10] + "| "+ responses[3][11] );
+		System.out.println("character design| "+ responses[4][1] + "| " + responses[4][2] + "| "+ responses[4][3] + "| "+ responses[4][4] + "| "+ responses[4][5] + "| "+ responses[4][6] + "| "+ responses[4][7] + "| "+ responses[4][8] + "| "+ responses[4][9] + "| "+ responses[4][10] + "| "+ responses[4][11] );
+		System.out.println("    overall     | "+ responses[5][1] + "| " + responses[5][2] + "| "+ responses[5][3] + "| "+ responses[5][4] + "| "+ responses[5][5] + "| "+ responses[5][6] + "| "+ responses[5][7] + "| "+ responses[5][8] + "| "+ responses[5][9] + "| "+ responses[5][10] + "| "+ responses[5][11] );
 		
 		
 		
